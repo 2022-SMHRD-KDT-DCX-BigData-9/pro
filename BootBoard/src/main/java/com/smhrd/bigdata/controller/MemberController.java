@@ -13,6 +13,8 @@ import com.smhrd.bigdata.service.MemberService;
 @Controller
 public class MemberController {
 	
+	
+	// 멤버컨트럴러만 보내기 박태성
 	@Autowired
 	MemberService service;
 	
