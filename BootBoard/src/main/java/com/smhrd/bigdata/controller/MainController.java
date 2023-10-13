@@ -18,16 +18,16 @@ import com.smhrd.bigdata.service.BoardService;
 @Controller
 public class MainController {
    
+
 	// 첫수정
 	// main 수정
 	// 머지
+	// 박태성 어디다 올려?
    @Autowired
    BoardService service;
    
    @GetMapping("/")
    public String index(HttpSession session, Model model) {
-      // main 수정(김동엽이)
-	  //하이
       BootMember member = (BootMember)session.getAttribute("loginMember");
       // loginMember 세션값 확인 -> O(게시물 정보 가져오기) / X(바로 index로 이동)
       if(session != null) { // 로그인 상태 -> 게시물 정보 가져오기
