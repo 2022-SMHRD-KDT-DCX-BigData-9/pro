@@ -19,6 +19,7 @@ import com.smhrd.bigdata.service.BoardService;
 public class MainController {
    
 	// 첫수정
+	// main 수정
    @Autowired
    BoardService service;
    
