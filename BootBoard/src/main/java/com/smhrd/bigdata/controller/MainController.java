@@ -20,6 +20,7 @@ public class MainController {
    
 	// 첫수정
 	// main 수정
+	// 머지
    @Autowired
    BoardService service;
    
