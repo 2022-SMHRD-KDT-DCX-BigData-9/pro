@@ -24,7 +24,7 @@ public class MainController {
    
    @GetMapping("/")
    public String index(HttpSession session, Model model) {
-      
+      // main 수정(김동엽이)
       BootMember member = (BootMember)session.getAttribute("loginMember");
       // loginMember 세션값 확인 -> O(게시물 정보 가져오기) / X(바로 index로 이동)      
       if(session != null) { // 로그인 상태 -> 게시물 정보 가져오기
