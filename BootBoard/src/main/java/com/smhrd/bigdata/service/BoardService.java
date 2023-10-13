@@ -29,9 +29,9 @@ public class BoardService {
 	}
 	
 	public BootBoard content(int idx) {
-		BootBoard b = repo.findByIdx(idx);
+		BootBoard c = repo.findByIdx(idx); // b를 c 로 바꿈
 		
-		return b;
+		return c;// b를 c 로 바꿈
 	}
 
 }
