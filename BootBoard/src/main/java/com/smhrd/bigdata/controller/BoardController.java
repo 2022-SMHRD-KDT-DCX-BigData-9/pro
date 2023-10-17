@@ -17,6 +17,7 @@ import com.smhrd.bigdata.converter.ImageToBase64;
 import com.smhrd.bigdata.entity.BootBoard;
 import com.smhrd.bigdata.service.BoardService;
 
+// 컨트롤러 주석
 @Controller
 public class BoardController {
 	
