@@ -18,7 +18,7 @@ import com.smhrd.bigdata.service.BoardService;
 @Controller
 public class MainController {
    
-//
+// 아무거나
 	// 첫수정
 	// main 수정
 	// 머지
