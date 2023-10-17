@@ -18,7 +18,11 @@ import com.smhrd.bigdata.service.BoardService;
 @Controller
 public class MainController {
    
+<<<<<<< HEAD
 	// 두번째  보내기?
+=======
+	//
+>>>>>>> branch 'taesungPark' of https://github.com/2022-SMHRD-KDT-DCX-BigData-9/pro.git
 	// 첫수정
 	// main 수정
 	// 머지
