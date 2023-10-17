@@ -20,7 +20,7 @@ import com.smhrd.bigdata.service.BoardService;
 @Controller
 public class MainController {
 	
-	
+	//
 	//
 	//
 	@Autowired
