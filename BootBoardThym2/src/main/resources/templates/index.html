@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title></title>
+<meta charset="utf-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no" />
+	
+	<!-- css파일경로 입력 부분 -->
+<link rel="stylesheet" href="assets/css/index.css" />
+
+</head>
+<body>
+<div class="container right-panel-active">
+  <!-- 회원가입 name은 주지 않았음 -->
+  <div class="container__form container--signup">
+    <form action="#" class="form" id="form1">
+      <h2 class="form__title">회원가입</h2>
+      <input type="text" placeholder="아이디" class="input" />
+      <input type="password" placeholder="패스워드" class="input" />
+      <input type="password" placeholder="패스워드 확인" class="input" />
+          
+<!-- 	radio 한줄로 출력하기 위해 div로 감쌈  -->
+
+	  <div class="input" style="text-align: left;">
+	  <label for="male_radio" >남</label>
+      <input type="radio" name="gender" id="male_radio">
+      <label for="female_radio" >여</label>                            
+      <input type="radio" name="gender" id="female_radio"> 
+       </div>
+      
+      <input type="date" class="input" name="" id="">
+       
+
+		
+				<!-- 회원가입 버튼 폼을 제출하는 submit 으로 만들어야 할듯 -->
+      <button class="btn">회원가입</button>
+    </form>
+  </div>
+
+  <!-- 로그인 name은 주지 않았음 -->
+  <div class="container__form container--signin">
+    <form action="#" class="form" id="form2">
+      <h2 class="form__title">로그인</h2>
+      <input type="email" placeholder="Email" class="input" />
+      <input type="password" placeholder="Password" class="input" />
+      
+      <!-- 로그인 버튼인데 폼을 제출하는 submit 으로 만들어야 할듯 -->
+      <button class="btn">로그인</button>
+    </form>
+  </div>
+
+  <!-- Overlay -->
+  <div class="container__overlay">
+    <div class="overlay">
+      <div class="overlay__panel overlay--left">
+        <button class="btn" id="signIn">로그인</button>
+      </div>
+      <div class="overlay__panel overlay--right">
+        <button class="btn" id="signUp">회원가입</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	<!-- js파일경로 입력 부분 -->
+	<script src="assets/js/index.js"></script>
+
+</body>
+</html>

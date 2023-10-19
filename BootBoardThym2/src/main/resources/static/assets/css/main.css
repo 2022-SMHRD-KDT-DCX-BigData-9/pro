@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+#nav_1 {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 20%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+li a.active {
+	background-color: #555;
+	color: white;
+}
+
+li a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+}
+
+#human_model {
+	width: 100%;
+}
+
+.container {
+	margin-left: 20%;
+	padding: 1px 16px;
+	/* height: 1000px; */
+	position: relative;
+}
+
+/* 인체모형 사진 */
+#human_model {
+	z-index: 1;
+	position: relative; /* 부모로부터 상대적인 위치 지정 */
+}
+
+/* 부위에 있는 빨간색 원들 클래스 */
+.parts_light {
+   /*  width:10px; 
+   height:10px; */
+
+   border-radius:50%;
+    background: #ff0000;
+   box-shadow: 0 0 5px rgba(255, 0, 0, 1),
+   
+    0 0 3px rgba(255, 0, 0, 1),
+    0 0 5px rgba(255, 0, 0, 1),
+    0 0 10px rgba(255, 0, 0, 1),
+    0 0 20px rgba(255, 0, 0, 0.5),
+    0 0 30px rgba(255, 0, 0, 0.5);
+    transform-origin: bottom right;
+    animation: blink 1s ease-in-out infinite; /* 새로운 애니메이션 추가 */
+/*     animation: animate 1.5s ease-in-out infinite;
+    animation: animate 1.5s ease-in-out infinite; */
+   position: relative; /* 앱솔루트로 바꿀지 확인 */
+   
+   z-index: 2;
+}
+
+/* 위와 관련해서 애니매이션 */
+@keyframes blink {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0; /* 투명하게 만들어 번쩍거리게 함 */
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* 부위에 div 박스들 클래스 */
+.parts_light_div {
+	position: absolute;
+	width: 25%; /* 원하는 크기로 조절 */
+	height: auto;
+	background-color: #fff; /* 배경색 */
+	border: 1px solid #000; /* 테두리 스타일 */
+	text-align: center; /* 텍스트 정렬 */
+	padding: 5px; /* 텍스트와 테두리 간격*/
+
+	
+}
+
+/* 마우스 오버 기능 */
+.parts_light img {
+  transition: all 0.2s linear;
+}
+.parts_light:hover img {
+  /* transform: scale(1.4); */
+  display:none;
+  
+}
+
+.hidden {
+	display: none;
+}
+
+
+/*마우스 클릭 효과 파동 */
+
+div.clickEffect {
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #ff0000;
+    border-radius: 50%;
+    animation: clickEffect 2s ease-out;
+    z-index: 5;
+}
+
+@keyframes clickEffect {
+    0% {
+        opacity: 0.5;
+        width: 0.5em;
+        height: 0.5em;
+        margin: -0.25em;
+        border-width: 0.2rem;
+    }
+    10% {
+        opacity: 0.4;
+        width: 1em;
+        height: 1em;
+        margin: -0.5em;
+        border-width: 0.18rem;
+    }
+    20% {
+        opacity: 0.3;
+        width: 1.5em;
+        height: 1.5em;
+        margin: -0.75em;
+        border-width: 0.16rem;
+    }
+    30% {
+        opacity: 0.2;
+        width: 2em;
+        height: 2em;
+        margin: -1em;
+        border-width: 0.14rem;
+    }
+    40% {
+        opacity: 0.1;
+        width: 2.5em;
+        height: 2.5em;
+        margin: -1.25em;
+        border-width: 0.12rem;
+    }
+    50%, 60%, 70%, 80% {
+        opacity: 0;
+        width: 3em;
+        height: 3em;
+        margin: -1.5em;
+        border-width: 0.1rem;
+    }
+    100% {
+        opacity: 0;
+        width: 3em;
+        height: 3em;
+        margin: -1.5em;
+        border-width: 0.1rem;
+    }
+}
+
+
+
